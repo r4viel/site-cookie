@@ -1,0 +1,82 @@
+@font-face {
+        font-family:more-sugar;
+        src: url(more_sugar/MoreSugar-Regular.otf) format('opentype'), url(more_sugar/MoreSugar-Extras.otf) format('opentype');}
+
+@font-face {
+        font-family:LeagueSpartan;
+        src: url(League_Spartan/static/LeagueSpartan-SemiBold.ttf) format('truetype'),}
+
+body{background-color: #92ADC2;}
+
+
+.sidebar {
+    width: 150px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente escondido */
+    transition: left 0.3s ease; /* Transição suave */
+    padding: 0px;
+    border-top-right-radius: 35px;
+    border-right: 5px solid;
+    border-color: #6B3235;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Exibe o menu */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+.sidebar li:first-child{
+    margin-top: 25px;
+}
+  
+  .sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  header{
+    background-color: #F0C9A2;
+    border-radius: 35px;
+    display: flex;
+    
+}
+#logo{margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15px;
+ }
+#logo22{width: 150px;}
+  .content {
+    margin-left: auto; /* Conteúdo começa sem deslocamento */
+    padding: 20px;
+    transition: margin-left 0.3s ease; /* Transição suave */
+    font-family: LeagueSpartan;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+    
+  }
+
+  #toggleButton {
+      position: fixed;
+      /* Garante que o botão fique acima do menu */
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 35px;
+      background-color: #F0C9A2;
+  }
